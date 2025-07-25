@@ -1,33 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Analytics (gtag.js) - 优化版本 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBV4DB5K8V"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DE46GRDPE7"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'G-EBV4DB5K8V', {
-            // 移除可能导致问题的配置
-            send_page_view: true,
-            anonymize_ip: true,
-            allow_google_signals: true,
-            allow_ad_personalization_signals: true
-        });
-        
-        // 确保GA加载完成后再执行其他操作
-        gtag('event', 'page_view');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DE46GRDPE7');
     </script>
-    
-    <!-- Google Tag Manager (可选 - 如果需要更强大的标签管理) -->
-    <!-- 如果使用GTM，请取消注释并添加你的GTM ID
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
-    -->
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -143,11 +124,6 @@
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
-    <!-- Google Tag Manager (noscript) - 如果使用GTM请取消注释
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    -->
-    
     <!-- Header Section -->
     <header class="header-gradient text-white py-12 px-4">
         <div class="container mx-auto max-w-6xl">
@@ -157,10 +133,10 @@
                     <p class="text-xl opacity-90 max-w-2xl">Battle hordes of monsters, upgrade your abilities, and survive as long as you can!</p>
                     
                     <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
-                        <a href="#play" class="apple-btn text-white font-semibold py-3 px-8 text-lg inline-flex items-center ga-track-btn" data-event="play_button_click" data-location="header">
+                        <a href="#play" class="apple-btn text-white font-semibold py-3 px-8 text-lg inline-flex items-center">
                             <i class="fas fa-play mr-2"></i> Play Now
                         </a>
-                        <a href="#features" class="bg-white text-apple-dark font-semibold py-3 px-8 text-lg rounded-xl inline-flex items-center ga-track-btn" data-event="learn_more_click" data-location="header">
+                        <a href="#features" class="bg-white text-apple-dark font-semibold py-3 px-8 text-lg rounded-xl inline-flex items-center">
                             Learn More
                         </a>
                     </div>
@@ -188,8 +164,7 @@
                 <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
                         title="Monster Survivors Game" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen
-                        onload="trackGameLoad()"></iframe>
+                        allowfullscreen></iframe>
             </div>
             
             <div class="text-center mt-8">
@@ -358,7 +333,7 @@
         <section class="text-center py-16 px-4 bg-white rounded-2xl shadow-lg max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold mb-4 text-apple-dark">Ready to Survive?</h2>
             <p class="text-lg text-apple-gray mb-8 max-w-2xl mx-auto">Join millions of players battling monsters right now. No downloads, no installs - just pure survival action!</p>
-            <a href="#play" class="apple-btn text-white font-semibold py-4 px-12 text-xl inline-flex items-center ga-track-btn" data-event="play_button_click" data-location="cta">
+            <a href="#play" class="apple-btn text-white font-semibold py-4 px-12 text-xl inline-flex items-center">
                 <i class="fas fa-play mr-3"></i> Play Monster Survivors Now
             </a>
         </section>
@@ -376,29 +351,29 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#play" class="text-apple-light-gray hover:text-white ga-track-btn" data-event="footer_link_click" data-location="play">Play Game</a></li>
-                        <li><a href="#features" class="text-apple-light-gray hover:text-white ga-track-btn" data-event="footer_link_click" data-location="features">Features</a></li>
-                        <li><a href="#" class="text-apple-light-gray hover:text-white ga-track-btn" data-event="footer_link_click" data-location="leaderboard">Leaderboard</a></li>
-                        <li><a href="#" class="text-apple-light-gray hover:text-white ga-track-btn" data-event="footer_link_click" data-location="faq">FAQ</a></li>
+                        <li><a href="#play" class="text-apple-light-gray hover:text-white">Play Game</a></li>
+                        <li><a href="#features" class="text-apple-light-gray hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-apple-light-gray hover:text-white">Leaderboard</a></li>
+                        <li><a href="#" class="text-apple-light-gray hover:text-white">FAQ</a></li>
                     </ul>
                 </div>
                 
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-apple-light-gray hover:text-white ga-track-btn" data-event="footer_link_click" data-location="terms">Terms of Service</a></li>
-                        <li><a href="#" class="text-apple-light-gray hover:text-white ga-track-btn" data-event="footer_link_click" data-location="privacy">Privacy Policy</a></li>
-                        <li><a href="#" class="text-apple-light-gray hover:text-white ga-track-btn" data-event="footer_link_click" data-location="cookies">Cookie Policy</a></li>
+                        <li><a href="#" class="text-apple-light-gray hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-apple-light-gray hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-apple-light-gray hover:text-white">Cookie Policy</a></li>
                     </ul>
                 </div>
                 
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Connect</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-apple-light-gray hover:text-white text-2xl ga-track-btn" data-event="social_click" data-location="facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-apple-light-gray hover:text-white text-2xl ga-track-btn" data-event="social_click" data-location="twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-apple-light-gray hover:text-white text-2xl ga-track-btn" data-event="social_click" data-location="discord"><i class="fab fa-discord"></i></a>
-                        <a href="#" class="text-apple-light-gray hover:text-white text-2xl ga-track-btn" data-event="social_click" data-location="youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-apple-light-gray hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-apple-light-gray hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-apple-light-gray hover:text-white text-2xl"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="text-apple-light-gray hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -412,142 +387,9 @@
     
     <!-- Floating Play Button for Mobile -->
     <div class="fixed bottom-6 right-6 md:hidden z-50">
-        <a href="#play" class="apple-btn text-white font-semibold py-4 px-6 rounded-full shadow-lg inline-flex items-center ga-track-btn" data-event="play_button_click" data-location="floating">
+        <a href="#play" class="apple-btn text-white font-semibold py-4 px-6 rounded-full shadow-lg inline-flex items-center">
             <i class="fas fa-play mr-2"></i> Play
         </a>
     </div>
-    
-    <!-- 优化后的Google Analytics事件跟踪 -->
-    <script>
-        // 等待DOM完全加载
-        document.addEventListener('DOMContentLoaded', function() {
-            // 检查gtag是否加载成功
-            function checkGtagLoaded() {
-                if (typeof gtag === 'function' && window.dataLayer) {
-                    console.log('✅ Google Analytics已成功加载');
-                    
-                    // 发送页面加载完成事件
-                    gtag('event', 'page_loaded', {
-                        event_category: 'Engagement',
-                        event_label: 'DOM Content Loaded',
-                        value: Math.round(performance.now())
-                    });
-                    
-                    // 初始化事件跟踪
-                    initializeEventTracking();
-                    
-                    return true;
-                } else {
-                    console.warn('⚠️ Google Analytics尚未加载完成，重试中...');
-                    return false;
-                }
-            }
-            
-            // 重试机制
-            let retryCount = 0;
-            const maxRetries = 10;
-            const checkInterval = setInterval(() => {
-                if (checkGtagLoaded() || retryCount >= maxRetries) {
-                    clearInterval(checkInterval);
-                    if (retryCount >= maxRetries) {
-                        console.error('❌ Google Analytics加载失败');
-                    }
-                }
-                retryCount++;
-            }, 500);
-        });
-        
-        // 初始化事件跟踪
-        function initializeEventTracking() {
-            // 为所有带有ga-track-btn类的按钮添加点击跟踪
-            document.querySelectorAll('.ga-track-btn').forEach(button => {
-                button.addEventListener('click', function(e) {
-                    const eventName = this.getAttribute('data-event') || 'button_click';
-                    const location = this.getAttribute('data-location') || 'unknown';
-                    
-                    gtag('event', eventName, {
-                        event_category: 'User Interaction',
-                        event_label: location,
-                        button_text: this.textContent.trim()
-                    });
-                    
-                    console.log(`📊 GA事件已发送: ${eventName} - ${location}`);
-                });
-            });
-            
-            // 滚动深度跟踪
-            let scrollDepths = [25, 50, 75, 90];
-            let scrollDepthsSent = [];
-            
-            window.addEventListener('scroll', function() {
-                const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
-                
-                scrollDepths.forEach(depth => {
-                    if (scrollPercent >= depth && !scrollDepthsSent.includes(depth)) {
-                        scrollDepthsSent.push(depth);
-                        gtag('event', 'scroll_depth', {
-                            event_category: 'Engagement',
-                            event_label: `${depth}%`,
-                            value: depth
-                        });
-                        console.log(`📊 滚动深度事件: ${depth}%`);
-                    }
-                });
-            });
-            
-            // 页面停留时间跟踪
-            let timeOnPage = 0;
-            const timeIntervals = [30, 60, 120, 300]; // 30秒, 1分钟, 2分钟, 5分钟
-            let timeSent = [];
-            
-            setInterval(() => {
-                timeOnPage += 10;
-                timeIntervals.forEach(interval => {
-                    if (timeOnPage >= interval && !timeSent.includes(interval)) {
-                        timeSent.push(interval);
-                        gtag('event', 'time_on_page', {
-                            event_category: 'Engagement',
-                            event_label: `${interval}s`,
-                            value: interval
-                        });
-                        console.log(`📊 页面停留时间: ${interval}秒`);
-                    }
-                });
-            }, 10000); // 每10秒检查一次
-        }
-        
-        // 游戏加载跟踪
-        function trackGameLoad() {
-            if (typeof gtag === 'function') {
-                gtag('event', 'game_loaded', {
-                    event_category: 'Game',
-                    event_label: 'iframe_loaded'
-                });
-                console.log('📊 游戏加载事件已发送');
-            }
-        }
-        
-        // 页面离开跟踪
-        window.addEventListener('beforeunload', function() {
-            if (typeof gtag === 'function') {
-                gtag('event', 'page_exit', {
-                    event_category: 'Engagement',
-                    event_label: 'page_unload',
-                    transport_type: 'beacon'
-                });
-            }
-        });
-        
-        // 错误跟踪
-        window.addEventListener('error', function(e) {
-            if (typeof gtag === 'function') {
-                gtag('event', 'javascript_error', {
-                    event_category: 'Error',
-                    event_label: e.message,
-                    value: 1
-                });
-            }
-        });
-    </script>
 </body>
 </html>
