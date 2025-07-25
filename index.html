@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) - 已修复 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBV4DB5K8V"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){dataLayer.push(arguments);}  // 修复函数定义
       gtag('js', new Date());
     
-      gtag('config', 'G-EBV4DB5K8V');
+      // 添加必要的配置参数
+      gtag('config', 'G-EBV4DB5K8V', {
+        cookie_flags: 'SameSite=None;Secure',  // 解决跨域问题
+        send_page_view: true                   // 启用页面浏览跟踪
+      });
     </script>
     
     <meta charset="UTF-8">
@@ -392,5 +396,31 @@
             <i class="fas fa-play mr-2"></i> Play
         </a>
     </div>
+    
+    <!-- 添加事件跟踪测试 -->
+    <script>
+        // 页面加载后发送测试事件
+        document.addEventListener('DOMContentLoaded', function() {
+            // 检查gtag函数是否存在
+            if (typeof gtag === 'function') {
+                // 发送页面浏览事件
+                gtag('event', 'page_view', {
+                    page_title: document.title,
+                    page_location: location.href,
+                    page_path: location.pathname
+                });
+                
+                // 发送自定义测试事件
+                gtag('event', 'ga_test', {
+                    event_category: 'Diagnostics',
+                    event_label: 'GA Configuration Check'
+                });
+                
+                console.log('GA测试事件已发送');
+            } else {
+                console.error('gtag函数未定义，请检查GA代码');
+            }
+        });
+    </script>
 </body>
 </html>
